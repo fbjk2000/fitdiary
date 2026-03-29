@@ -39,7 +39,7 @@ export async function analyzeFuelPhoto(photoUri: string): Promise<PhotoNutrition
   });
 
   const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), 45000);
+  const timeoutId = setTimeout(() => controller.abort(), 75000);
 
   let response: Response;
   try {
@@ -63,7 +63,9 @@ export async function analyzeFuelPhoto(photoUri: string): Promise<PhotoNutrition
     });
   } catch (error) {
     if (error instanceof Error && error.name === 'AbortError') {
-      throw new Error('Fuel vision request timed out');
+      throw new Error(
+        'Fuel vision request timed out. The meal-photo service may have been waking from inactivity, so please try once more in a few seconds.'
+      );
     }
     throw new Error('Fuel vision endpoint is unreachable');
   } finally {

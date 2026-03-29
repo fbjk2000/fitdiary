@@ -6,20 +6,20 @@
   "build": {
     "development": {
       "env": {
-        "EXPO_PUBLIC_FITDIARY_VISION_ENDPOINT": "https://fitdiary-vision-proxy.onrender.com/estimate-fuel"
+        "EXPO_PUBLIC_FITDIARY_VISION_ENDPOINT": "https://fitdiary-vision-proxy-2.onrender.com/estimate-fuel"
       },
       "developmentClient": true,
       "distribution": "internal"
     },
     "preview": {
       "env": {
-        "EXPO_PUBLIC_FITDIARY_VISION_ENDPOINT": "https://fitdiary-vision-proxy.onrender.com/estimate-fuel"
+        "EXPO_PUBLIC_FITDIARY_VISION_ENDPOINT": "https://fitdiary-vision-proxy-2.onrender.com/estimate-fuel"
       },
       "distribution": "internal"
     },
     "production": {
       "env": {
-        "EXPO_PUBLIC_FITDIARY_VISION_ENDPOINT": "https://fitdiary-vision-proxy.onrender.com/estimate-fuel"
+        "EXPO_PUBLIC_FITDIARY_VISION_ENDPOINT": "https://fitdiary-vision-proxy-2.onrender.com/estimate-fuel"
       },
       "autoIncrement": true
     }
